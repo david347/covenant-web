@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .App-logo {
@@ -14,18 +19,23 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #e9e8e8;
+  min-height: 10%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(31, 31, 31);
+  width: 100%;
+}
+
+.App-header h3 {
+  margin-right: 20px;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #ffb84d;
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +46,47 @@
     transform: rotate(360deg);
   }
 }
+
+.actions_buttons {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 70%;
+}
+
+.quorum-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+}
+
+.block-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.block-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.basic-item {
+  width: 50% !important;
+  margin: 8px !important;
+  text-align: center;
+}
+
+.basic-item div {
+  width: 100%;
+}
+
+.basic-item-2 {
+  width: 20% !important;
+  text-align: center;
+}
+
